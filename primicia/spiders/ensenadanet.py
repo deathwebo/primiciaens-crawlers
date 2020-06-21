@@ -4,7 +4,7 @@ from datetime import datetime
 from scrapy.exceptions import CloseSpider
 from urllib.parse import urljoin
 
-locale.setlocale(locale.LC_TIME, 'es_ES')
+locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
 
 now = datetime.now()
 today_formatted = now.strftime('%-d de %B de %Y')
