@@ -16,7 +16,7 @@ class PrimiciaPipeline:
 class DatabasePipeline:
     def open_spider(self, spider):
         DB_URI = 'postgresql://primicia:primiciapassword!@0.0.0.0:5432/primicia'
-        self.db = dataset.connect(os.getenv("DB_URI"), BD_URI)
+        self.db = dataset.connect(os.getenv("DATABASE_URL"), BD_URI)
 
     def process_item(self, item, spider):
         table = self.db['news']
