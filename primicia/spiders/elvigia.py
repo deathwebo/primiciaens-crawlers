@@ -7,7 +7,7 @@ from urllib.parse import urljoin
 locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
 
 now = datetime.now()
-today_formatted = now.strftime('%-d de %B de %Y')
+today_formatted = now.strftime('%A, %-d de %B de %Y')
 
 class ElVigiaSpider(scrapy.Spider):
     name = 'elvigia'
