@@ -5,6 +5,9 @@ RUN apt-get upgrade -y
 
 RUN echo "es_ES.UTF-8 UTF-8" >> /etc/locale.gen && locale-gen
 
+ENV TZ=America/Tijuana
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 WORKDIR /app
 COPY requirements.txt /app/requirements.txt
 
