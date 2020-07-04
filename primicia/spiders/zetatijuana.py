@@ -3,7 +3,6 @@ import locale
 from datetime import datetime
 import scrapy
 from scrapy.exceptions import CloseSpider
-from urllib.parse import urljoin
 
 locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
 
