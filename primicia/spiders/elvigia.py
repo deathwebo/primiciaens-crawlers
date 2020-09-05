@@ -9,7 +9,7 @@ locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
 now = datetime.now()
 today_formatted = now.strftime('%A, %-d de %B de %Y')
 
-CATEGORIES = ["GENERAL", "EL VALLE", "911", "COLUMNAS"]
+CATEGORIES = ["GENERAL", "EL VALLE", "911"]
 
 
 class ElVigiaSpider(scrapy.Spider):
